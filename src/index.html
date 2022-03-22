@@ -5,39 +5,84 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="../dist/output.css" rel="stylesheet">
 	<title>Axel González</title>
 </head>
 
-<body class="bg-desert | font-roboto">
+<body class="bg-desert | font-roboto text-asphalt">
 
 	<nav class="border-b border-asphalt | flex justify-between items-center | p-2 | sticky top-0 z-2 | bg-desert">
 		<span class="text-1xl font-bold">Axel González</span>
 		<ul class="flex justify-evenly items-center">
-			<li class="mr-3"><a href="#">About</a></li>
-			<li class="mr-3"><a href="#">Works</a></li>
-			<li class=""><a href="#">Contact</a></li>
+			<li class="mr-3"><a href="#about" class="hover:text-blue-600">About</a></li>
+			<li class="mr-3"><a href="#works" class="hover:text-blue-600">Works</a></li>
+			<li class=""><a href="#contact" class="hover:text-blue-600">Contact</a></li>
 		</ul>
 	</nav>
 
-	<main class="">
+	<main>
 
-		<section class="bg-asphalt | text-desert text-center | py-10">
+		<section id="about" class="px-4 py-16 | bg-asphalt | text-desert text-center">
 			<span>My name is</span>
 			<h1 class="text-4xl font-bold | mt-5">Axel Gonzalez</h1>
-			<button class="mt-7 | bg-desert | text-asphalt font-bold | p-2 | rounded-xl |">I’m a frontend
+			<button class="mt-7 | bg-desert | text-asphalt font-bold | p-2 | rounded-xl">I’m a frontend
 				developer</button>
 		</section>
 
-		<section class="grid grid-cols-2 gap-4 | place-items-center | p-2">
-			<div>
-				<img class="object-cover h-48 w-96"
+		<!-- <section class="px-4 py-8 | grid grid-cols-2 gap-4 | place-items-center | p-2"> -->
+		<section class="px-4 py-20 | text-center">
+			<!-- <div class="">
+				<img class="object-cover w-100"
 					src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="profile-pic">
-			</div>
+			</div> -->
 			<div>
 				<h2 class="mb-2 | font-medium">Who i am <br> <span class="font-bold text-2xl">Hello</span></h2>
 				<p>I'm a junior frontend developer. I like to use <b>MERN</b> as my main stack and other CSS libraries
 					like <b>Bootstrap</b> or <b>TailwindCSS</b></p>
+			</div>
+		</section>
+
+		<section id="works" class="px-4 py-8 | text-center text-desert | bg-asphalt">
+			<h2 class="text-3xl font-bold">Works</h2>
+			<h3 class="text-lg font-bold">Awesome projects</h3>
+
+			<!-- <div class="grid  grid-cols-3 grid-rows-2 gap-4 | p-5">
+				<img class="object-cover w-100"
+					src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="profile-pic">
+				<img class="object-cover w-100"
+					src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="profile-pic">
+				<img class="object-cover w-100"
+					src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="profile-pic">
+				<img class="object-cover w-100"
+					src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="profile-pic">
+				<img class="object-cover w-100"
+					src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="profile-pic">
+				<img class="object-cover w-100"
+					src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="profile-pic">
+			</div> -->
+			<div class="mt-5">
+				<p class="animate-bounce">I'm still working on create awesome projects, come later to see more 👀</p>
+			</div>
+		</section>
+
+		<section id="contact" class="px-4 py-12 | text-center">
+			<h2 class="text-3xl font-bold | mb-6">Contact</h2>
+			<div class="flex | justify-around">
+				<a href="#"><i
+						class="fa-brands fa-youtube | text-4xl hover:text-blue-700 hover:text-5xl | animate-pulse hover:animate-none ease-in duration-300"></i></a>
+				<a href="#"><i
+						class="fa-brands fa-linkedin | text-4xl hover:text-blue-700 hover:text-5xl | animate-pulse hover:animate-none ease-in duration-300"></i></a>
+				<a href="#"><i
+						class="fa-brands fa-twitter | text-4xl hover:text-blue-700 hover:text-5xl | animate-pulse hover:animate-none ease-in duration-300"></i></a>
+				<a href="#"><i
+						class="fa-brands fa-facebook-square | text-4xl hover:text-blue-700 hover:text-5xl | animate-pulse hover:animate-none ease-in duration-300"></i></a>
+				<a href="#"><i
+						class="fa-brands fa-instagram | text-4xl hover:text-blue-700 hover:text-5xl | animate-pulse hover:animate-none ease-in duration-300"></i></a>
+				<a href="#"><i
+						class="fa-brands fa-codepen | text-4xl hover:text-blue-700 hover:text-5xl | animate-pulse hover:animate-none ease-in duration-300"></i></a>
 			</div>
 		</section>
 
