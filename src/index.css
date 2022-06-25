@@ -1,0 +1,23 @@
+@import "./reset.css";
+
+html, body{
+	min-height: 99vh;
+}
+
+body{
+	display: grid;
+	grid-template-columns: 3fr;
+	grid-template-rows: 1fr;
+}
+
+.navbar{
+	background-color: lightblue;
+}
+
+.main-content{
+	background-color: lightcoral;
+}
+
+.footer{
+	background-color: lightgreen;
+}
