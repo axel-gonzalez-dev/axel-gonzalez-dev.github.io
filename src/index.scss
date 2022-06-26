@@ -1,0 +1,48 @@
+@import "./assets/reset";
+
+/* Variables */
+:root {
+	--dark: "#222831";
+	--light-dark: "#393E46";
+	--blue: "#00ADB5";
+	--gray: "#EEEEEE";
+}
+
+html,
+body {
+	/* min-height: 99vh; */
+}
+
+body {
+	display: grid;
+	grid-template-columns: 3fr;
+	grid-template-rows: 1fr;
+}
+
+.navbar {
+	background-color: lightblue;
+}
+
+.main-content {
+	background-color: lightcoral;
+}
+
+.footer {
+	background-color: lightgreen;
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+
+	.navbar{
+		display: flex;
+		justify-content: space-between;
+		padding: .25rem .75rem;
+	}
+
+	.navbar-elements{
+		display: flex;
+		justify-content: space-between;
+		min-width: 50%;
+	}
+}
