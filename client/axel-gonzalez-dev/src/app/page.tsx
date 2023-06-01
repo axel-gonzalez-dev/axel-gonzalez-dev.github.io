@@ -29,7 +29,7 @@ export default function Home() {
         <section className="px-4 py-20 | text-center">
           <div>
             <h2 className="mb-2 | font-medium">Who i am <br></br> <span className="font-bold text-2xl">Hello</span></h2>
-            <p>I'm a junior frontend developer. I like to use <b>MERN</b> as my main stack and other CSS libraries
+            <p>I am a junior frontend developer. I like to use <b>MERN</b> as my main stack and other CSS libraries
               like <b>Bootstrap</b> or <b>TailwindCSS</b></p>
           </div>
         </section>
@@ -39,7 +39,7 @@ export default function Home() {
           <h3 className="text-lg font-bold">Awesome projects</h3>
 
           <div className="mt-5">
-            <p className="animate-bounce">I'm still working on create awesome projects, come later to see more 👀</p>
+            <p className="animate-bounce">I am still working on create awesome projects, come later to see more 👀</p>
           </div>
         </section>
 
