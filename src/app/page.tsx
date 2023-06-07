@@ -8,15 +8,6 @@ import codepenIcon from "../../assets/icons/codepen.svg";
 export default function Home() {
   return (
     <>
-      <nav className="border-b border-asphalt | flex justify-between items-center | p-2 | sticky top-0 z-2 | bg-desert">
-        <span className="text-1xl font-bold">Axel González</span>
-        <ul className="flex justify-evenly items-center">
-          <li className="mr-3"><a href="#about" className="hover:text-blue-600">About</a></li>
-          <li className="mr-3"><a href="#works" className="hover:text-blue-600">Works</a></li>
-          <li className=""><a href="#contact" className="hover:text-blue-600">Contact</a></li>
-        </ul>
-      </nav>
-
       <main>
 
         <section id="about" className="px-4 py-16 | bg-asphalt | text-desert text-center">
