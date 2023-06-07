@@ -1,16 +1,13 @@
-import Image from "next/image"
 import Link from "next/link";
-
-/* Import icons */
-import codepenIcon from "../../assets/icons/codepen.svg";
-import leetCode from "../../assets/icons/leetcode.svg";
-import platziIcon from "../../assets/icons/platzi.svg";
-import codecademyIcon from "../../assets/icons/codecademy.svg";
-import udemyIcon from "../../assets/icons/udemy.svg";
 
 /* Import icons as JSX */
 import LinkedinIcon from '../assets/icons/linkedin';
 import TwitterIcon from '../assets/icons/twitter';
+import CodepenIcon from '../assets/icons/codepen';
+import CodecademyIcon from '../assets/icons/codecademy';
+import LeetcodeIcon from '../assets/icons/leetcode';
+import PlatziIcon from '../assets/icons/platzi';
+import UdemyIcon from '../assets/icons/udemy';
 
 export default function Home() {
   return (
@@ -78,28 +75,28 @@ export default function Home() {
         <section id="contact" className="text-center | flex justify-center items-center | min-h-[40vh] | bg-gray-50 dark:bg-gray-900 | text-asphalt dark:text-desert | p-4 py-10">
           <div className="min-w-full">
             <h2 className="text-3xl font-bold | mb-20">Contact</h2>
-            
+
             <div className="grid grid-cols-3 gap-8 place-items-center">
               <Link href="https://www.linkedin.com/in/axel-gonzalez-dev/" target="_blank" className="animate-pulse hover:animate-none ease-in duration-300 | fill-asphalt dark:fill-desert">
-                <LinkedinIcon/>
+                <LinkedinIcon />
               </Link>
               <Link href="https://twitter.com/axelgonzalezdev" target="_blank" className="animate-pulse hover:animate-none ease-in duration-300 | fill-asphalt dark:fill-desert">
-                <TwitterIcon/>
+                <TwitterIcon />
               </Link>
-              <Link href="https://codepen.io/axel-gonzalez-dev" target="_blank">
-                <Image width={36} height={40} className="animate-pulse hover:animate-none ease-in duration-300 hover:fill-blue-700" src={codepenIcon} alt="Codepen icon" />
+              <Link href="https://codepen.io/axel-gonzalez-dev" target="_blank" className="animate-pulse hover:animate-none ease-in duration-300 | fill-asphalt dark:fill-desert">
+                <CodepenIcon />
               </Link>
-              <Link href="https://leetcode.com/axelgonzalezdev/" target="_blank">
-                <Image width={36} height={40} className="animate-pulse hover:animate-none ease-in duration-300 hover:fill-blue-700" src={leetCode} alt="Leetcode icon" />
+              <Link href="https://www.codecademy.com/profiles/axel.gonzalez.dev" target="_blank" className="animate-pulse hover:animate-none ease-in duration-300 | fill-asphalt dark:fill-desert">
+                <CodecademyIcon />
               </Link>
-              <Link href="https://platzi.com/p/davidaxel121/" target="_blank">
-                <Image width={36} height={40} className="animate-pulse hover:animate-none ease-in duration-300 hover:fill-blue-700" src={platziIcon} alt="Platzi icon" />
+              <Link href="https://leetcode.com/axelgonzalezdev/" target="_blank" className="animate-pulse hover:animate-none ease-in duration-300 | fill-asphalt dark:fill-desert">
+                <LeetcodeIcon />
               </Link>
-              <Link href="https://www.codecademy.com/profiles/axel.gonzalez.dev" target="_blank">
-                <Image width={36} height={40} className="animate-pulse hover:animate-none ease-in duration-300 hover:fill-blue-700" src={codecademyIcon} alt="Codecademy icon" />
+              <Link href="https://platzi.com/p/davidaxel121/" target="_blank" className="animate-pulse hover:animate-none ease-in duration-300 | fill-asphalt dark:fill-desert">
+                <PlatziIcon />
               </Link>
-              <Link href="https://www.udemy.com/user/david-axel-gonzalez-flores/" target="_blank">
-                <Image width={36} height={40} className="animate-pulse hover:animate-none ease-in duration-300 hover:fill-blue-700" src={udemyIcon} alt="Udemy icon" />
+              <Link href="https://www.udemy.com/user/david-axel-gonzalez-flores/" target="_blank" className="animate-pulse hover:animate-none ease-in duration-300 | fill-asphalt dark:fill-desert">
+                <UdemyIcon />
               </Link>
             </div>
           </div>
