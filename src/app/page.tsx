@@ -4,6 +4,10 @@ export default function Home() {
 
   const socialMediaLinks = [
     {
+      url: 'https://github.com/axel-gonzalez-dev',
+      name: 'Github'
+    },
+    {
       url: 'https://www.linkedin.com/in/axel-gonzalez-dev/',
       name: 'Linkedin'
     },
@@ -31,10 +35,6 @@ export default function Home() {
       url: 'https://www.udemy.com/user/david-axel-gonzalez-flores/',
       name: 'Udemy'
     },
-    {
-      url: 'https://github.com/axel-gonzalez-dev',
-      name: 'Github'
-    }
   ]
 
   return (
@@ -110,8 +110,8 @@ export default function Home() {
             <p>Social media</p>
 
             <ul className="mt-2">
-              {socialMediaLinks.map(({ url, name }) => (
-                <li className="mt-1 | hover:opacity-70 | font-semibold"><a target="_blank" href={url}>{name}</a ></li>
+              {socialMediaLinks.map(({ url, name }, index) => (
+                <li key={index} className="mt-1 | hover:opacity-70 | font-semibold"><a target="_blank" href={url}>{name}</a ></li>
               ))}
             </ul>
 
