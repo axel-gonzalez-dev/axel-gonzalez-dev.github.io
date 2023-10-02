@@ -1,6 +1,20 @@
-import Link from "next/link";
+import { Project } from '@/components/projects/interfaces/project.interface';
+import Projects from '@/components/projects/page';
 
 export default function Home() {
+
+  const projects: Project[] = [
+    {
+      name: "Gifs App",
+      url: "https://incomparable-mochi-9a9a6c.netlify.app",
+      technologies: ['Angular', 'Typescript']
+    },
+    {
+      name: "Family Recipes",
+      url: "https://dazzling-hamster-337558.netlify.app",
+      technologies: ["Angular", "Typescript"]
+    }
+  ]
 
   const socialMediaLinks = [
     {
@@ -90,12 +104,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="text-center | flex justify-center items-center | min-h-[50vh] | bg-desert dark:bg-asphalt | text-asphalt dark:text-desert | p-4">
-        <div>
-          <h2 className="mb-7 | font-bold | text-3xl">Projects</h2>
+      <section id="projects" className="text-center | min-h-[50vh] | bg-desert dark:bg-asphalt | text-asphalt dark:text-desert | p-4">
+        <h2 className="mb-7 | font-bold | text-3xl">Projects</h2>
 
-          <p className="animate-bounce">I am still working on create some awesome projects, come later to see more 👀</p>
-        </div>
+        <Projects projects={projects}></Projects>
+
       </section>
 
       <section id="contact" className="min-h-[40vh] | bg-gray-50 dark:bg-gray-900 | text-asphalt dark:text-desert | p-4 py-10">

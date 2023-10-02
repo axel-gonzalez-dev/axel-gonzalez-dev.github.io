@@ -13,6 +13,9 @@ module.exports = {
         'desert': '#ffffff',
         'jumbo': '#7A7A7C',
         'friar': '#84847D'
+      },
+      gridTemplateColumns: {
+        'resposive': 'repeat(auto-fit, minmax(300px, 1fr));'
       }
     },
   },
